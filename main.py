@@ -13,13 +13,13 @@ my_graph.add_directed_edge('u', 'y')
 my_graph.add_directed_edge('t', 'w')
 my_graph.add_directed_edge('u', 'x')
 
-agm_bfs = bfs(my_graph,'s')
+bfs_result = bfs(my_graph,'s')
 print ("List of parents")
-print(agm_bfs[0])
+print(bfs_result[0])
 print ("")
 
 print ("List of distance from " + 's')
-print(agm_bfs[1])
+print(bfs_result[1])
 print ("")
 
 shortest_path(my_graph, 's', 'y')
